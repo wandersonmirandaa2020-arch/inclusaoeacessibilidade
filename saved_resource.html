@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://web-sandbox.oaiusercontent.com/? -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusão &amp; Acessibilidade</title>
+  <style>
+    :root {
+      --bg: #ece9ff;
+      --bg-light: #f7f4ff;
+      --wine: #7b234e;
+      --wine-soft: #8c2b5b;
+      --line: #8c2b5b;
+      --text: #5d2144;
+      --dark: #1f1f1f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+    }
+
+    .site {
+      max-width: 1180px;
+      margin: 0 auto;
+      background: var(--bg-light);
+      box-shadow: 0 0 28px rgba(0,0,0,0.08);
+    }
+
+    header {
+      background: var(--bg);
+      padding: 24px 38px;
+      border-bottom: 2px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav strong {
+      font-size: 22px;
+      color: var(--wine);
+    }
+
+    nav a {
+      color: var(--wine);
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 14px;
+    }
+
+    section {
+      background: var(--bg);
+      padding: 38px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    h1, h2, h3 {
+      color: var(--wine);
+      margin-top: 0;
+      font-weight: 900;
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 22px;
+    }
+
+    h3 {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 0 0 18px;
+    }
+
+    .hero,
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .image-box {
+      width: 100%;
+      min-height: 320px;
+      overflow: hidden;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      max-height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-box.contain img {
+      object-fit: contain;
+      background: var(--bg);
+      padding: 10px;
+    }
+
+    .quote {
+      min-height: 130px;
+      display: flex;
+      align-items: center;
+      padding-left: 90px;
+      font-size: 23px;
+      line-height: 1.35;
+      color: var(--dark);
+      background: var(--bg);
+    }
+
+    .read-more {
+      text-align: right;
+      font-size: 15px;
+      color: var(--wine);
+      margin-top: 16px;
+      line-height: 1.35;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid #b989a8;
+      margin-top: 24px;
+    }
+
+    .card {
+      min-height: 150px;
+      padding: 24px 18px;
+      text-align: center;
+      border-right: 1px solid #b989a8;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .card:last-child {
+      border-right: 0;
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+      color: var(--wine);
+    }
+
+    .relato {
+      display: grid;
+      grid-template-columns: 1fr 170px;
+      gap: 26px;
+      align-items: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--wine);
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        position: static;
+      }
+
+      .hero,
+      .two-columns,
+      .relato {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 38px;
+      }
+
+      section {
+        padding: 26px;
+      }
+
+      .quote {
+        padding-left: 26px;
+        font-size: 20px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        border-right: 0;
+        border-bottom: 1px solid #b989a8;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 8px 0 0;
+      }
+    }
+  </style>
+<style>html,body,#root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0;padding:0}html,body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif!important}button,input,textarea,select{font-family:inherit}html{background-color:#fff}html.dark{background-color:#212121}html.chatgptOled.dark,html.mobileSkybridge.dark{background-color:#000}@supports (font: -apple-system-body){html.mobileSkybridge{font:-apple-system-body}}html.desktopSkybridge.dark{background-color:#1e1e1e}html.androidSkybridge,html.androidSkybridge body,html.androidSkybridge *{-webkit-tap-highlight-color:rgba(255,255,255,0)}html.androidSkybridge *::selection,html.androidSkybridge *::-moz-selection{background:#fff0;color:inherit}</style></head>
+<body>
+  <main class="site">
+    <header>
+      <nav>
+        <strong>Inclusão &amp; Acessibilidade</strong>
+        <div>
+          <a href="https://web-sandbox.oaiusercontent.com/?#inicio">Início</a>
+          <a href="https://web-sandbox.oaiusercontent.com/?#mobilidade">Mobilidade</a>
+          <a href="https://web-sandbox.oaiusercontent.com/?#comunicacao">Comunicação</a>
+          <a href="https://web-sandbox.oaiusercontent.com/?#inclusao">Inclusão</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div>
+        <h1>Conscientização da Acessibilidade e Inclusão</h1>
+        <p>
+          A acessibilidade e a inclusão são essenciais para garantir que todas as pessoas tenham respeito,
+          oportunidades e participação plena na sociedade. Quando pensamos em ambientes acessíveis,
+          pensamos em dignidade, autonomia e igualdade.
+        </p>
+        <p>
+          Pequenas atitudes, adaptações e mudanças no olhar podem transformar a realidade de muitas pessoas,
+          permitindo que todos participem dos espaços sociais, escolares, profissionais e comunitários.
+        </p>
+      </div>
+      <div class="image-box contain">
+        <img src="./image1.png" alt="Acessibilidade e inclusão">
+      </div>
+    </section>
+
+    <section class="quote">
+      “Acessibilidade é abrir caminhos para que todos possam participar.”
+    </section>
+
+    <section id="mobilidade" class="two-columns">
+      <div>
+        <h2>Experimento Social:<br>Mobilidade</h2>
+        <div class="image-box">
+          <img src="./image3.jpg" alt="Experimento social de mobilidade">
+        </div>
+      </div>
+      <div>
+        <h3>Experimento social de mobilidade</h3>
+        <p>
+          O experimento social de mobilidade foi realizado para compreender, na prática, os desafios enfrentados
+          por pessoas com deficiência visual ou com dificuldades de locomoção.
+        </p>
+        <p>
+          Durante a atividade, foi possível perceber insegurança, dependência do ambiente e a importância de rampas,
+          sinalizações, apoio e espaços bem planejados.
+        </p>
+        <p>
+          Essa experiência desperta empatia e mostra que a acessibilidade precisa estar presente em todos os lugares.
+        </p>
+        <div class="read-more">Leia Mais sobre<br>Acessibilidade</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Registro e reflexão sobre o experimento realizado</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🚶</div>
+          Quais foram as principais dificuldades ao caminhar com os olhos vendados?
+        </div>
+        <div class="card">
+          <div class="icon">😮</div>
+          O que mais surpreendeu ou destacou-se durante as rodadas do experimento?
+        </div>
+        <div class="card">
+          <div class="icon">💡</div>
+          Como essa experiência influenciou sua percepção sobre acessibilidade?
+        </div>
+        <div class="card">
+          <div class="icon">👥</div>
+          Essa experiência pode sensibilizar outras pessoas sobre acessibilidade?
+        </div>
+      </div>
+    </section>
+
+    <section id="comunicacao" class="two-columns">
+      <div>
+        <h2>Experimento Social:<br>Comunicação</h2>
+        <div class="image-box">
+          <img src="./image4.jpg" alt="Experimento social de comunicação">
+        </div>
+      </div>
+      <div>
+        <p>
+          O experimento de comunicação mostrou como a ausência da fala e da escrita pode dificultar a expressão
+          de ideias, sentimentos e necessidades.
+        </p>
+        <p>
+          A comunicação por gestos, expressões faciais e outros meios não verbais exige atenção, empatia e paciência.
+          Essa prática reforça que comunicar também é incluir.
+        </p>
+        <div class="image-box" style="min-height: 220px; margin-top: 20px;">
+          <img src="./image5.jpg" alt="Comunicação não verbal">
+        </div>
+        <div class="read-more">Leia Mais sobre<br>Acessibilidade</div>
+      </div>
+    </section>
+
+    <section id="inclusao" class="hero">
+      <div>
+        <h1>Inclusão</h1>
+        <div class="image-box contain">
+          <img src="./image6.png" alt="Inclusão">
+        </div>
+      </div>
+      <div>
+        <h3>
+          Escrever um pequeno texto no estilo de notícia sobre:<br>
+          Os tipos de inclusão e como você entende as dificuldades do dia a dia sobre o assunto.
+        </h3>
+        <p>
+          A inclusão vai além de aceitar as diferenças; é garantir que todas as pessoas tenham as mesmas oportunidades
+          e possam participar plenamente da sociedade. Existem diferentes tipos de inclusão: social, educacional,
+          profissional e digital, que ajudam a promover igualdade, respeito e acesso para todos.
+        </p>
+        <p>
+          No dia a dia, ainda enfrentamos desafios como o preconceito, a falta de acessibilidade e a desinformação.
+          Pequenas atitudes podem transformar realidades e construir um mundo mais justo, empático e inclusivo.
+        </p>
+      </div>
+    </section>
+
+    <section class="quote">
+      “Incluir é reconhecer o valor e a importância de cada pessoa.”
+    </section>
+
+    <section class="two-columns">
+      <div>
+        <h2>Inclusão &amp;<br>Acessibilidade</h2>
+        <div class="image-box">
+          <img src="./image7.jpg" alt="Inclusão e acessibilidade">
+        </div>
+      </div>
+      <div>
+        <h3>
+          Escrever um pequeno texto no estilo de notícia sobre:<br>
+          Como ações para Inclusão e a Acessibilidade podem mudar vidas.
+        </h3>
+        <p>
+          A inclusão e a acessibilidade são direitos que transformam vidas e constroem uma sociedade melhor para todos.
+          Quando ambientes, serviços e informações são pensados para todas as pessoas, barreiras são quebradas e
+          oportunidades se multiplicam.
+        </p>
+        <p>
+          Rampas, sinalizações, materiais em formatos acessíveis, tecnologia assistiva e, principalmente, atitude e
+          empatia fazem a diferença. Ações simples geram autonomia, dignidade e pertencimento.
+        </p>
+        <p>
+          Incluir é abrir caminhos. Acessibilidade é garantir que todos possam caminhar neles.
+        </p>
+      </div>
+    </section>
+
+    <section class="relato">
+      <p>
+        Quando meu pai sofreu um AVC, precisou utilizar uma cadeira de rodas durante aproximadamente três meses.
+        Em certa ocasião, ele precisou ir a um local que não possuía rampa de acesso. Como não havia nenhuma
+        estrutura adequada para sua locomoção, algumas pessoas precisaram carregá-lo nos braços para que ele pudesse
+        chegar ao destino desejado.
+        <br><br>
+        Essa experiência me fez compreender a verdadeira importância da acessibilidade. Percebi que muitas pessoas
+        enfrentam dificuldades diárias simplesmente porque os ambientes não estão preparados para recebê-las com
+        autonomia e segurança. Se naquele momento não houvesse pessoas disponíveis para ajudar, meu pai teria encontrado
+        grandes dificuldades para se locomover. Por isso, acredito que a acessibilidade deve estar presente em todos os
+        espaços, garantindo que cada pessoa possa exercer seu direito de ir e vir com independência, dignidade e igualdade.
+      </p>
+      <div class="read-more">Leia Mais sobre<br>Inclusão</div>
+    </section>
+
+    <footer>
+      Site sobre Inclusão &amp; Acessibilidade
+    </footer>
+  </main>
+
+</body></html>
